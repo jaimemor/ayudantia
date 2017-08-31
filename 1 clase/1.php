@@ -1,8 +1,7 @@
 <?php
-$i="hola";
-
-$alumnos= ['cristobal' => 5.2, 'diego' => 5.5];
-
+$variable="hola";
+$alumnos= ['cristobal' => 5.2, 'diego' => 5.5, 'jaime' => 7.0];
+$ramo= "jasdja";
 ?>
 
 <!DOCTYPE html>
@@ -12,11 +11,12 @@ $alumnos= ['cristobal' => 5.2, 'diego' => 5.5];
 <title>documetn</title>
 </head>
 <body>
-<h1><?php echo $i;?></h1>
+<h1><?php echo $variable;?></h1>
 
 <?php
-for($i = 0;$i < 5;$i++){
-echo "<h1>".$i. "</h1>";
+for ($i = 0;$i < 5;$i++){
+	
+echo "<h1>".$variable. "</h1>";
 }
 
 ?>
@@ -24,12 +24,15 @@ echo "<h1>".$i. "</h1>";
 <table style="border:solid 1px #000;">
 <tr>
 	<td>alumnos</td>
+	<td>Ramo</td>
 	<td>nota</td>
+	
 	</tr>
 	
 	<?php foreach ($alumnos as $key => $value): ?>
 	<tr>
 		<td><?php echo $key;?></td>
+		<td><?php echo $ramo;?></td>
 		<td><?php echo $value;?></td>
 	
 	</tr>
