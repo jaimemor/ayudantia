@@ -2,6 +2,8 @@
 $variable="hola";
 $alumnos= ['cristobal' => 5.2, 'diego' => 5.5, 'jaime' => 7.0];
 $ramo= "jasdja";
+
+$cursos=['bases de datos'=> 'cif-13', 'calculo I' => 'cif-33', 'algebra'=> 'cif333'];
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +23,7 @@ echo "<h1>".$variable. "</h1>";
 
 ?>
 
-<table style="border:solid 1px #000;">
+<table style="border:solid 1px red;">
 <tr>
 	<td>alumnos</td>
 	<td>Ramo</td>
@@ -38,5 +40,17 @@ echo "<h1>".$variable. "</h1>";
 	</tr>
 	<?php endforeach?>
 	</table>
-</body>
+<center><table style="border:solid 5px purple;">
+	<tr>
+	<td> ramo</td>
+	<td>clave</td>
+	</tr>
+	<?php foreach ($cursos as $clave => $infram): ?>
+	<tr>
+	<td><?php echo $clave;?>
+	<td><?php echo $infram;?>
+	</tr>
+	<?php endforeach?>
+	</table></center>
+	</body>
 </html>
