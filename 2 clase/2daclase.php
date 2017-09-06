@@ -18,10 +18,11 @@
 			<br>Nombre<input type="text" id="nombre" ></br>
 			<br>Apellido<input type="text" id="apellido"></br>
 			<br>Rut<input type="text" name="rut"></br>
+			<input type="hidden" name="alumno_form">
 			<button type="submit" class="btn-success">Enviar tu sms amigo!</button>
 			</center>
 			</form>
-			
+			 
 		</div>
 		<div class="col-md-6 well">
 			
@@ -29,6 +30,7 @@
 			<center>
 			<br>Ramo<input type="text" id="ramo" ></br>
 			<br>Nota<input type="text" id="nota"></br>
+			<input type="hidden" name="ramo_form">
 			<button type="submit" class="btn-danger">Enviar tu sms amigo!</button>
 			</center>
 			</form>
