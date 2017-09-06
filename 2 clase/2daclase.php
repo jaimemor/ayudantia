@@ -21,6 +21,7 @@
 			<button type="submit" class="btn-success">Enviar tu sms amigo!</button>
 			</center>
 			</form>
+			
 		</div>
 		<div class="col-md-6 well">
 			
